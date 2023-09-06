@@ -1,0 +1,127 @@
+.first-advantages {
+  position: absolute;
+  top: 471px;
+  background-color: @white;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.first-advantages__item {
+  width: 240px;
+  height: 105px;
+  position: relative;
+  padding-left: 80px;
+  padding-top: 26px;
+  margin: 0 auto;
+}
+
+.first-advantages__item--house::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-house.svg.svg");
+  background-repeat: no-repeat;
+  top: 26px;
+  left: 21px;
+  width: 40px;
+  height: 37px;
+}
+
+.first-advantages__item--gift::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-gift.svg.svg");
+  background-repeat: no-repeat;
+  top: 26px;
+  left: 21px;
+  width: 40px;
+  height: 38px;
+}
+
+.first-advantages__item--burger::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-burger.svg.svg");
+  background-repeat: no-repeat;
+  top: 26px;
+  left: 21px;
+  width: 40px;
+  height: 37px;
+}
+
+@media (min-width: @tablet-width) {
+  .first-advantages {
+    display: flex;
+    height: 330px;
+    top: 256px;
+  }
+
+  .first-advantages__item {
+    width: 185px;
+    height: 112px;
+    padding-top: 158px;
+  }
+
+  .first-advantages__item:nth-child(3) {
+    order: 2;
+  }
+
+  .first-advantages__item:nth-child(2) {
+    order: 3;
+  }
+
+  .first-advantages__item--house::before {
+    background-image: url("../img/icon-houseTab.svg");
+    top: 60px;
+    left: 90px;
+    width: 75px;
+    height: 72px;
+  }
+
+  .first-advantages__item--gift::before {
+    background-image: url("../img/icon-giftTab.svg");
+    top: 60px;
+    left: 124px;
+    width: 75px;
+    height: 72px;
+  }
+
+  .first-advantages__item--burger::before {
+    background-image: url("../img/icon-burgerTab.svg");
+    top: 60px;
+    left: 124px;
+    width: 75px;
+    height: 72px;
+  }
+
+  .first-advantages__description {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .first-advantages {
+    width: 1200px;
+  }
+
+  .first-advantages__item {
+    width: 282px;
+    height: 91px;
+    padding-top: 158px;
+  }
+}
+
+.first-advantages__title {
+  margin: 0;
+  color: @black-text;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: left;
+}
+
+.first-advantages__description {
+  margin: 0;
+  text-align: left;
+  color: @grey-text;
+  margin-bottom: 26px;
+}

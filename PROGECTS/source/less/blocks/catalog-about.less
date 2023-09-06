@@ -1,0 +1,51 @@
+.catalog-about {
+  position: relative;
+}
+
+.catalog-about__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  height: 214px;
+  background-image: url("../img/back-desktopFormD.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    height: 347px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 357px;
+  }
+}
+
+.catalog-about__wrapper::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/Vector\ left.svg");
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  width: 160px;
+  height: 57px;
+}
+
+.catalog-about__wrapper::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/Vector\ right.svg");
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 160px;
+  width: 160px;
+  height: 57px;
+}
+
+.catalog-about__img-sedona {
+  margin: 0 auto;
+  margin-top: 52px;
+}

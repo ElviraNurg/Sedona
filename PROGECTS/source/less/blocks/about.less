@@ -1,0 +1,121 @@
+.about__wrapper {
+  position: relative;
+  width: 100%;
+  height: 389px;
+  background-image: url("../img/back-mobile.jpg.jpg");
+  background-color: @light-blue;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.about__wrapper::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/Vector\ left.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  width: 160px;
+  height: 57px;
+}
+
+.about__wrapper::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/Vector\ right.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 160px;
+  width: 160px;
+  height: 57px;
+}
+
+.about__header {
+  width: 100%;
+  height: 214px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__header-img-welcome {
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 7px;
+}
+
+.about__header-img-sedona {
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 36px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .about__wrapper {
+    width: 100%;
+    height: 518px;
+    background-image: url("../img/back-desktop.jpg.jpg");
+  }
+
+  .about__wrapper::before {
+    background-image: url("../img/VectorL.svg");
+    width: 384px;
+    left: 0;
+  }
+
+  .about__wrapper::after {
+    background-image: url("../img/VectorR.svg");
+    width: 384px;
+    left: 384px;
+  }
+
+  .about__header-img-welcome {
+    margin: 77px auto 11px;
+    width: 183px;
+    height: 45px;
+  }
+
+  .about__header-img-text {
+    width: 175px;
+    height: 28px;
+  }
+
+  .about__header-img-sedona {
+    margin: 52px auto 60px;
+    width: 461px;
+    height: 80px;
+  }
+
+  .about__header-img-descrip {
+    width: 283px;
+    height: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__wrapper {
+    width: 1200px;
+    background-image: url("../img/back-desktop.jpg.jpg");
+  }
+
+  .about__wrapper::before {
+    background-image: url("../img/VectorLD.svg");
+    width: 600px;
+    left: 0;
+  }
+
+  .about__wrapper::after {
+    background-image: url("../img/VectorRD.svg");
+    width: 600px;
+    left: 600px;
+  }
+
+  .about__header-img-welcome {
+    width: 188px;
+  }
+}
